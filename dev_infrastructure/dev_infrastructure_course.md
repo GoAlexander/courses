@@ -15,7 +15,7 @@ style: |
 
 ---
 
-# Инфраструктура для разработки (почти DevOps)
+# Инфраструктура для разработки (или поговорим о совместной разработчке, инфраструктуре, CI и DevOps)
 автор: Дыдычкин Александр Алексеевич
 email: AlexanderDydychkin@yandex.ru
 
@@ -23,8 +23,8 @@ email: AlexanderDydychkin@yandex.ru
 
 # Вступление
 
-- Почему название такое?
-- Это DevOps - курс?
+- Обсудим название
+- Это не курс по DevOps?
 - Курс актуален для аналитиков/разработчиков/инфраструктурщиков? 
 - Курс содержит специфику Gitlab?
 
@@ -42,7 +42,20 @@ email: AlexanderDydychkin@yandex.ru
 
 ---
 
+## А также сокращение издержек!
+
+---
+
 ![Alt text](images/agile.webp)
+
+---
+
+### Agile manifest
+
+> 1. Individuals and interactions over processes and tools
+> 2. Working software over comprehensive documentation
+> 3. Customer collaboration over contract negotiation
+> 4. Responding to change over following a plan
 
 ---
 
@@ -56,7 +69,7 @@ email: AlexanderDydychkin@yandex.ru
 
 Проблемы на ~~бочку~~ доску!
 
-*(типичная проблема поставки / релиза)*
+*(типичная проблема поставки / релиза...)*
 
 ---
 
@@ -67,6 +80,11 @@ email: AlexanderDydychkin@yandex.ru
 ## CI - если больно, то давайте делать ЭТО чаще!
 
 - техническая ретроспектива: раньше был cron + .sh скрипты
+
+---
+
+![Alt text](images/ci.png)
+
 ---
 
 ## DevOps
@@ -74,19 +92,30 @@ email: AlexanderDydychkin@yandex.ru
 - команда, а не человек
 - сотрудничество команд разработки и эксплуатации
 - навыки написания кода
-- автоматизация, много автоматизации
 - конвееры CI/CD используются активно
 - все есть текст / "infrastructure as a code" (git)
 - культура взаимодействия
 - отлаженный процесс развертывания
-- рутина
+- автоматизация рутины, ещё раз автоматизация, много автоматизации
 
 ---
 
-## Ок. Проблемы порешали. А что вообще нужно разработчику?
+## Разница между CI и DevOps?
+
+- культура
+- степень автоматизации
 
 ---
 
+![Alt text](images/devops_trends.png)
+
+---
+
+## Ок. Проблемы порешали. А что нужно, чтобы построить инфраструктуру для разработки?
+
+---
+
+## Инструментарий
 ![Alt text](images/infrastructure_bricks.png)
 <!-- |                 Theoretical service                |                    Implementation                        |
 |:--------------------------------------------------:|:--------------------------------------------------------:|
@@ -125,7 +154,7 @@ email: AlexanderDydychkin@yandex.ru
 - популярность:
   - один из самых популярных инструментов в корпоративной среде;
   - некоторые open source организации тоже используют Gitlab (Gnome, VLC и т. д.);
-- all-in-one;
+- all-in-one (представитель "2-ого поколения");
 - бесплатен в версии Community Edition (CE) - самое то для команд <=100 человек.
 
 ---

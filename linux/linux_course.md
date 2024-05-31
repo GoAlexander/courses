@@ -1553,6 +1553,35 @@ $ docker run hello-world  # команда запустит hello-world конт
 
 ---
 
+### Обход санкций :fire:
+
+Если `docker pull` возвращает сообщение типа:
+```
+Error response from daemon: error parsing HTTP 403 response body: invalid character '<' looking for beginning of value: 
+"Since Docker is a US company, we must comply with US export control regulations. 
+In an effort to comply with these, we now block all IP addresses that are located in Cuba, Iran, North Korea, Republic of Crimea, Sudan, and Syria. 
+If you are not in one of these cities, countries, or regions and are blocked, please reach out to https://hub.docker.com/support/contact/"
+```
+
+---
+
+То делаем следующее:
+1) `sudo nano /etc/docker/daemon.json`
+2) Если файл пустой, то вставить как есть, если уже заполнен настройками, то достаточно вставить ключ registry-mirrors:
+```json
+{
+  "registry-mirrors" : [
+    "https://mirror.gcr.io",
+    "https://daocloud.io",
+    "https://huecker.io/"
+  ]
+}
+```
+3) `sudo systemctl restart docker`
+4) Profit!
+
+---
+
 ## Интерактивное создание и использование контейнера
 Получение образа
 ```bash
