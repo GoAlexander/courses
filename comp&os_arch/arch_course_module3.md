@@ -5,6 +5,7 @@ title: Computer and OS architecture
 theme: default
 paginate: true
 math: mathjax
+footer: "Star slides [here](https://github.com/GoAlexander/courses)"
 
 ---
 

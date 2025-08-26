@@ -5,7 +5,7 @@ title: University motivation
 theme: gaia
 _class: lead
 paginate: true
-backgroundColor: #fff
+backgroundColor: white
 backgroundImage: url('hero-background.svg')
 
 ---
@@ -23,6 +23,9 @@ backgroundImage: url('hero-background.svg')
 - это долго;
 - это дорого;
 - нужно впитывать в себя огромное кол-во новой информации и изучать смежные дисциплины;
+
+---
+
 - нужно заниматься научной деятельностью;
 - приходится слушать критику.
 
