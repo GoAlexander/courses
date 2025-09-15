@@ -696,21 +696,7 @@ docker run --memory="128m" container-name
 
 ![bg right:20% 90%](./images/fs/hdd.jpg)
 
-[Чуть больше про историю HDD](https://habr.com/ru/companies/wd/articles/345112/)
-
----
-
-## HDD
-
-**Случайный доступ** - чтение и запись по произвольному смещению относительно начала.
-
-**Ротационная задержка** - время на позиционирование головки для чтения нужного сектора
-
----
-
-## Сравнение HDD vs SSD SATA vs SSD NVME
-
-![Alt text](./images/fs/bench.png)
+[Чуть больше про историю HDD](https://habr.com/ru/companies/wd/articles/345112/). И в первом модуле курса. :smile:
 
 ---
 
