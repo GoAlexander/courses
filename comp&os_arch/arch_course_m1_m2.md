@@ -791,6 +791,10 @@ Git (если установлен)
 
 ---
 
+![bg right:80% 90%](./images/hdd_inside.jpg)
+
+---
+
 ### Твердотельные накопители (SSD)
 
 1984 год - первая flash-память изобретена в Toshiba.
@@ -803,6 +807,8 @@ Git (если установлен)
 - "Затухание сигнала"
 - **Поддержка "параллельного доступа"**
 
+![bg right:40% 90%](./images/ssd/ssd2.jpg)
+
 ---
 
 - Не чувствительны к фрагментации
@@ -811,18 +817,27 @@ Git (если установлен)
 
 ---
 
-SLC NOR	100 000 .. 1 000 000	Numonyx M58BW, Spansion S29CD016J
-MLC NOR	100 000	Numonyx J3 flash
-SLC NAND	100 000	Samsung OneNAND KFW4G16Q2M
-MLC NAND	1000 .. 10 000	Samsung K9G8G08U0M
-TLC NAND	1000	Samsung SSD 840
-3D MLC NAND	6000 .. 40 000	Samsung SSD 850 PRO, Samsung SSD 845DC PRO
-3D TLC NAND	1000 .. 3000	Samsung SSD 850 EVO, Samsung SSD 845DC EVO, Crucial MX300
+![bg right:100% 90%](./images/ssd/ssd1.jpg)
 
-<!-- TODO: create table + source https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B5%D1%88-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C -->
-<!-- Add pictures of all types of storages -->
-<!-- Add info about interfaces and standards 2.5 and 3.5-->
-<!-- Use this pic: https://anlan.ru/files/uploads/HARD-DISK-DRIVE_1.jpg -->
+#### SSD с интерфейсами SATA и m.2
+
+---
+
+![bg right:100% 90%](./images/ssd/ssd3.jpg)
+![bg right:100% 90%](./images/ssd/ssd4.webp)
+
+---
+
+#### Типы интерфейсов
+
+NVMe (PCIe) на порядки быстрее SATA
+
+---
+
+(NVME (PCIe) на порядки быстрее SATA)
+
+![bg right:100% 90%](./images/ssd/ssd_connectors.png)
+![bg right:100% 90%](./images/ssd/ssd_connectors2.png)
 
 ---
 
@@ -832,47 +847,50 @@ TLC NAND	1000	Samsung SSD 840
 
 
 
-<!-- PART #2 -->
+<!-- PART #2-3 -->
 ---
 
-# Лекция №2: Процессорные команды и адресация. Архитектура современных ЭВМ.
+# Лекция №2-3: Процессор. Процессорные архитектуры, команды и адресация. Материнская плата. Шины.
+
+**(тезисно)**
 
 ---
 
-## Ключевые слова
+## Ключевые термины
 
-Методы автоматизации, конечный автомат, компьютер VS "светофор"
+- Светофор, компьютер, граф, конечный автомат;
+- Процессор (ЦП), SoC, кремниевый бюджет;
+- Архитектуры (MISC, CISC, RISC), x86, битность архитектуры, адреса (8 битные и так далее), разрядность шины;
+- Хар-ки ЦП:
+    - Частота (GHz, кол-во операций за единицу времени)
+    - Кол-во ядер (1...)
+    - Архитектура (x86, ARM, RISC...)
+    - Поколение (тех. процесс (в нанометрах) + оптимизации)
+    - Битность (8, 16, 32, 64...)
+    - Поддержка технологий (PCIe*, DDR*...)
 
-ПК, сервер, SoC, микроконтроллеры, ЦП, ОЗУ. PCI Express, SATA, DDR4/DDR5, частота процессора, разрядность, разрядность шины, 32/64 бит, MISC, CISC, RISC, x86
+---
+
+- Процессорные команды, типы команд, разрядность, 32 VS 64 бита;
+- Микроконтроллеры;
+- ОЗУ, DDR4/DDR5, PCI Express (PCIe), SATA.
+
+---
+
+![bg right:100% 90%](./images/cpu/cpu1.jpg)
+![bg right:100% 90%](./images/cpu/cpu2.jpg)
+
+---
+
+![bg right:100% 90%](./images/cpu/cpu3.jpg)
+![bg right:100% 90%](./images/cpu/cpu4.jpg)
+
+---
 
 https://godbolt.org - сравнение количества ассемблерных инструкций
 
 [Pro-HiTech - визуализация работы CPU.](https://www.youtube.com/watch?v=aNVMpiyeY_U)
 
----
-
-<!-- PART #3 -->
----
-
-# Лекция №3: Приземление от высокого к низкому уровню программированию.
-
----
-
-## Ключевые слова
-
-Процессорные команды, типы команд, разрядность, 32 VS 64 бита, сопроцессор (где, зачем, что делает).
-
----
-
-<!-- PART #4 -->
----
-
-{lecture 4 & seminar 4 placeholder...}
-
-<!-- PART #5 -->
----
-
-{lecture 5 & seminar 5 placeholder...}
 
 <!-- PART #6 -->
 ---
