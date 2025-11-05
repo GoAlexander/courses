@@ -10,7 +10,7 @@ footer: "Star slides [here](https://github.com/GoAlexander/courses)"
 
 ---
 
-# Семинары. 1-2 модули
+# Семинары. 1 модуль
 
 ---
 
@@ -671,18 +671,6 @@ Bash scripting cheetsheet - https://devhints.io/bash
 `mount` - монтирование в ФС
 
 В `--help` каждой команды будут очень полезные аргументы.
-
----
-
-## Лабораторная работа №2
-
-...
-
----
-
-## Лабораторная работа №3
-
-...
 
 ---
 
