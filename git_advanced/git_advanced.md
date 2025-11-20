@@ -108,6 +108,23 @@ git apply file
 
 ---
 
+## "Легкое" клонирование
+
+**shallow clone**
+```bash
+git clone --depth=X --single-branch --branch main URL
+```
+*Profit: только X коммитов, только 1 ветка, без истории. Удобно для однократного билда, который не будет использовать git*
+
+**filtered clone**
+```bash
+git clone --filter=blob:none URL
+                   tree:none
+```
+*Profit: вся история, но без blob'ов. `git checkout SHA1` - blob'ы подргрузятся ad-hoc*
+
+---
+
 ## Откат ветки
 
 ```bash
