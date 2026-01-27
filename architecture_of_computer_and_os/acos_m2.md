@@ -118,12 +118,12 @@ footer: "Star slides [here](https://github.com/GoAlexander/courses)"
 
 Во время учебы в университете ему не понравилась учебная ОС MINIX (автор Эндрю Таненбаум), Линус решил сделать свою. Тут и закрутилось.
 
-
 ---
 
 В 1983 Ричард Мэттью Столлман основал проект [GNU](https://en.wikipedia.org/wiki/GNU_Project) с целью создания **свободной** Unix-подобной операционной системы. К началу 1990-ых было готово всё, кроме ядра [GNU Hurd](https://en.wikipedia.org/wiki/GNU_Hurd), сделанного по принципу микроядерной архитектуры.
 
 ---
+
 >**1992**: The Linux kernel is relicensed under the **GNU GPL**.
 
 >**1993**: Over 100 developers work on the Linux kernel. With their assistance the kernel is **adapted to the GNU environment**, which creates a large spectrum of application types for Linux. The oldest currently existing Linux distribution, Slackware, is released for the first time. Later in the same year, the Debian project is established. Today it is the largest community distribution.
@@ -400,7 +400,6 @@ GNU GPL:
 - https://www.youtube.com/watch?v=Ag1AKIl_2GM
 Free software, free society: Richard Stallman at TEDxGeneva 2014
 
----
 
 <!-- PART #8 -->
 ---
@@ -410,12 +409,6 @@ Free software, free society: Richard Stallman at TEDxGeneva 2014
 ---
 
 {lecture placeholder...}
-
----
-
-{seminar placeholder...}
-
----
 
 
 <!-- PART #9-->
@@ -427,8 +420,6 @@ Free software, free society: Richard Stallman at TEDxGeneva 2014
 ---
 
 {lecture placeholder...}
-
----
 
 
 <!-- PART #10-->
@@ -536,7 +527,6 @@ Win API - blackbox. Вызов конкретной функции из Win API 
 
 ![bg right:100% 75%](./images/tannebaum/6.jpg)
 
----
 
 <!-- PART #11-->
 ---
@@ -545,7 +535,6 @@ Win API - blackbox. Вызов конкретной функции из Win API 
 
 {placeholder...}
 
----
 
 <!-- PART #12-->
 ---

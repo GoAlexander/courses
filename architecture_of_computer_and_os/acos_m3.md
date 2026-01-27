@@ -132,7 +132,7 @@ footer: "Star slides [here](https://github.com/GoAlexander/courses)"
 - v2.4 - O(n) scheduler - https://en.wikipedia.org/wiki/O(n)_scheduler
 - v2.6 - O(1) scheduler - https://en.wikipedia.org/wiki/O%281%29_scheduler
 - v2.6.23 - Completely Fair Scheduler (CFS) - https://en.wikipedia.org/wiki/Completely_Fair_Scheduler
-- v6.6 (2024) - Earliest eligible virtual deadline first (EEVDF) - https://en.wikipedia.org/wiki/Completely_Fair_Scheduler
+- v6.6 (2024) - Earliest eligible virtual deadline first (EEVDF) - https://en.wikipedia.org/wiki/Earliest_eligible_virtual_deadline_first_scheduling
     - uses notions of virtual time, eligible time, virtual requests and virtual deadlines for determining scheduling priority
 
 [В целом неплохая статья на хабре: "CPU планировщики в Linux"](https://habr.com/ru/articles/807645/)
