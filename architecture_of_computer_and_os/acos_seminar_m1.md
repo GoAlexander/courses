@@ -621,6 +621,80 @@ $ unset BUILD_TYPE           # remove variable
 
 ---
 
+#### Дополнительный материал для домашнего изучения.
+
+---
+
+##### Мониторинг системы
+
+```bash
+$ uname -a                    # "your name" общая информация о системе
+$ uptime                      # печатает время с последней перезагрузки
+$ cat /proc/cpuinfo           # печатает информацию по каждому ядру CPU
+$ lscpu                       # то же самое, но более кратко
+$ cat /etc/lsb-release        # ubuntu-specific, информация о Ubuntu
+$ lsb_release -a              # то же самое
+
+$ ps                          # печатает список активных процессовы
+$ ps -aux | grep my_process   # вывести только процесс с названием my_process
+$ top                         # консольный аналог "диспетчера задач" :)
+$ htop                        # еще лучше, чем top, но менее распространен
+$ ps -aef | grep process_name # вывести список файлов, которые использует процесс
+```
+
+---
+
+```bash
+$ kill -9 process_pid         # передать процессу сигнал 9 (SIGKILL)
+                              # SIGKILL - принудительное выключение процесса
+$ killall process_name        # завершит процесс для всех пользователей
+
+$ df                          # список примонтированных разделов
+$ du -sh dir_name             # печатает размер папки dir_name
+```
+
+[Подробнее про процессы в Linux + список типов сигналов](https://www.bogotobogo.com/Linux/linux_process_and_signals.php)
+
+---
+
+![Alt text](../linux/images/atemyram.png)
+https://www.linuxatemyram.com
+
+---
+
+##### Управление удаленной системой
+
+```bash
+# установка openssh сервера и его настройка
+$ sudo apt install openssh-server
+$ sudo systemctl enable ssh
+$ sudo systemctl start ssh
+
+$ ssh localhost # подключиться к себе же
+# обычно:
+$ ssh user@domain # domain может быть ip или имя
+
+# копирование файлов с одной Linux машины на другую
+$ rsync -viaP ./important_dir/ name@192.168.20.1:/home/alex/docs/
+```
+
+---
+
+##### Совсем немного о сети
+
+```bash
+$ ifconfig
+$ iwconfig
+
+$ ping ya.ru              # незаменимо в работе с провайдером :)
+$ traceroute habrahabr.ru # контроль прохождения пакета между двумя узлами
+$ host ya.ru
+
+$ route                   # отображение таблицы маршрутизации
+```
+
+---
+
 # Список лабораторных работ
 
 ---
