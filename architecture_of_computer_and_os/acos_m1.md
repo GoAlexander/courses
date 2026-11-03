@@ -511,76 +511,59 @@ Git (если установлен)
 #### Ultimate extensions collection for C/C++ dev
 *Справочно (не все из этого списка понадобится вам в этом году, может быть даже не в следующем или даже не в университете, список составлен для самостоятельного изучения)*
 
-- C/C++ Themes
-- Dev Containers
-- Diff Viewer
-- lnav
+**TODO: актуализировать + git отдельной колонкой + вынести в dotfile в репо :smile:**
 
 ---
 
-- Remote - SSH
-- Remote - SSH: Editing Configuration Files
-- Remote - Tunnels
-- Remote Development
-- Remote Explorer
-- С/C++
-- C/C++ Build Task
-- C/C++ Compiler Explorer
-- C/C++ Extension Pack
-- CMake Test Explorer
-- CMake Test Tools
-- CMake Tools
+<style scoped>
+table {
+  font-size: 16px;
+}
+th, td {
+  padding: 4px 8px;
+}
+</style>
+
+| General | Git | C++ | Python |
+| :--- | :--- | :--- | :--- |
+| Docker | Git Blame | С/C++ | Python |
+| Remote - SSH | **Git Graph** | C/C++ Build Task | Pylance |
+| Remote - SSH: Editing Configuration Files | Git Merger | C/C++ Compiler Explorer | Pylint |
+| Remote - Tunnels | Git Tags | C/C++ Extension Pack | Black |
+| Remote Development | git-autoconfig | C/C++ Themes | autoDocstring - Python Docstring Generator |
+| Remote Explorer | gitignore | CMake Test Explorer | isort |
+| Dev Containers | GitLens | CMake Test Tools | JSON Schema Validator |
+| Diff Viewer | History in Sublime Merge | CMake Tools | Jinja |
+| Log Explorer | | Makefile Tools | |
+| Smart-Log | | Native Debug | |
+| lnav | | Debug Visualizer | |
+| Test Explorer UI | | vGDB | |
+| HTML Preview | | **Disassembly Explorer** | |
+| Systemd Helper | | | |
 
 ---
 
-- Debug Visualizer
-- Disassembly Explorer
-- Docker
+<style scoped>
+table {
+  font-size: 16px;
+}
+th, td {
+  padding: 4px 8px;
+}
+</style>
 
----
-
-- Git Blame
-- Git Graph
-- Git Merger
-- Git Tags
-- git-autoconfig
-- gitignore
-- GitLens
-- History in Sublime Merge
-- Large file support
-- Log Explorer
-- Makefile Tools
-- Native Debug
-
----
-
-- Smart-Log
-- Test Explorer UI
-- vGDB
-<!-- TODO: отсортировать список строго по смыслу? Удалить расширения связанные с логами(?)  -->
-<!-- 2025: обновить, выложить в репо dotfiles -->
-
----
-
-Еще немного дополнений + для Python:
-- Python
-- Pylance
-- Pylint
-- Black
-- autoDocstring - Python Docstring Generator
-- HTML Preview
-- isort
-- JSON Schema Validator
-- Sublime Text Keymap and Settings Importer
-- Systemd Helper
-
----
-
-- YAML
-- markdownlint
-- Code Spell Checker
-- Russian - Code Spell Checker
-
+| General | Git | C++ | Python |
+| :--- | :--- | :--- | :--- |
+| Sublime Text Keymap and Settings Importer| | | |
+| YAML | | | |
+| markdownlint | | | |
+| Code Spell Checker | | | |
+| Russian - Code Spell Checker | | | |
+| **WSL** | | | |
+| **Kilo Code** | | | |
+| Marp for VS Code | | | |
+| Rainbow CSV | | | |
+| Transparent Minimap | | | |
 
 <!-- PART #1 -->
 ---
@@ -614,7 +597,7 @@ Git (если установлен)
 
 ---
 
-![bg right:70% 90%](images/intel8086.png)
+![bg right:100% 50%](images/intel8086.png)
 
 ---
 
@@ -632,7 +615,12 @@ Git (если установлен)
 
 ---
 
-![bg right:100% 75%](../programming_techs/images/mem_hierarchy1.png)
+- Cycle == такт
+- 5 Ghz (ГГц) - 5 млрд циклов (тактов) в секунду
+- "объём" такта - разрядность
+- (не учитываем параллелизм, оптимизации спекулятивные вычисления)
+
+![bg right:60% 75%](../programming_techs/images/mem_hierarchy1.png)
 
 ---
 
@@ -687,25 +675,30 @@ Git (если установлен)
 - периферия (видеокарта и т.д.)
 - БП
 
-![bg right:50% 110%](images/comp6.webp)
+![bg right:40% 110%](images/comp6.webp)
 
 ---
 
 # Корпус :smile:
 
-Форм-факторы. Горизонтальные:
-- Desktop (533×419×152)
-- FootPrint (406×406×152)
-- SlimLine (406×406×101)
-- UltraSlimLine (381×352×75)
+<style scoped>
+table {
+  font-size: 20px;
+}
+th, td {
+  padding: 4px 8px;
+}
+</style>
 
-Вертикальные:
-- MiniTower (178×432×432)
-- **MidiTower (183×432×490) ->**
-- Full (Big) Tower (190×482×820)
-- SuperFullTower
+Форм-факторы
+| Горизонтальные | Вертикальные |
+| :--- | :--- |
+| Desktop (533×419×152) | MiniTower (178×432×432) |
+| FootPrint (406×406×152) | **MidiTower (183×432×490) ->** |
+| SlimLine (406×406×101) | Full (Big) Tower (190×482×820) |
+| UltraSlimLine (381×352×75) | SuperFullTower |
 
-![bg right:50% 110%](images/comp6.webp)
+![bg right:45% 110%](images/comp6.webp)
 
 ---
 
@@ -767,7 +760,8 @@ Git (если установлен)
 ### Жёсткие диски (HDD)
 
 - 1956 год - появление первого жёсткого диска Ramac I
-- Появление Файловых Систем (ФС).
+- Поддержка НЕ последовательного чтения
+- Появление Файловых Систем (ФС)
 
 Особенности:
 - Корпус - контроллер с кешем - "блины" - считывающие головки - газ
@@ -847,10 +841,10 @@ NVMe (PCIe) на порядки быстрее SATA
 
 
 
-<!-- PART #2-3 -->
+<!-- PART #2-4 -->
 ---
 
-# Лекция №2-3: Процессор. Процессорные архитектуры, команды и адресация. Материнская плата. Шины.
+# Лекция №2-4: Процессор. Процессорные архитектуры, команды и адресация. Материнская плата. Шины.
 
 **(тезисно)**
 

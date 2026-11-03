@@ -333,7 +333,7 @@ $ paste names.txt ages.txt        # смержить файлы, строка к
 
 $ diff $f another_file.txt        # "difference", разница между двумя файлами
 
-$ ls | xargs cat                  # получить потоко из stdout и подставить его
+$ ls | xargs cat                  # получить поток из stdout и подставить его
                                   # как аргумент в команду
                                   # на практике используется в ситуациях типа:
                                   # удаление файлов, найденных командой find
@@ -341,7 +341,7 @@ $ ls | xargs cat                  # получить потоко из stdout и
 
 ---
 
-## Некоторые особенности синтаксиса (use-cases)
+## Некоторые особенности синтаксиса (use-cases 1)
 
 ```bash
 # && - выполнить 2-ую команду, если 1-ая выполнена успешно
@@ -363,17 +363,17 @@ $ cat compilation.log | grep "Error:"
 
 ## Stdout, stderr (use-cases 2)
 У любой программы есть 3 потока:
-1. `stdout` - standart output. Стандартный поток вывода. В C++ `cout`. Пример:
+1. `stdout` - standart output. Стандартный поток вывода. В C++ `cout`.
 ```bash
 $ ls
 file.txt Docs # обычный output, который вы видите
 ```
-2. `stderr` - standart error. Стандартный поток вывода ошибок. В C++ `cerr`. Пример:
+2. `stderr` - standart error. Стандартный поток вывода ошибок. В C++ `cerr`.
 ```bash
 $ rm Docs
 rm: cannot remove 'Docs': Is a directory # сообшения об ошибках
 ```
-3. `stdin` - standart input. Стандартный поток **ввода**. В C++ `cin`. Пример:
+3. `stdin` - standart input. Стандартный поток **ввода**. В C++ `cin`.
 ```bash
 $ cat compilation.log | grep "Error:"
 # программа "grep" получила в поток stdin портянку текста из compilation.log  
@@ -381,7 +381,7 @@ $ cat compilation.log | grep "Error:"
 
 ---
 
-## Stdout, stderr (use-cases 2)
+## Stdout, stderr (use-cases 3)
 По-умолчанию `>`, `>>` и `|` работают с `stdout`. Поэтому существует синтаксис явного перенаправления потоков:
 - `1>` - перенаправить только stdout;
 - `2>` - перенаправить только stderr;
@@ -643,7 +643,7 @@ $ unset BUILD_TYPE           # remove variable
 
 ---
 
-* **на 9 баллов**: если выставлена переменная окружения `LAB1_MAX_COMPRESSION=1`, то сжатие производится, используя алгоритм `lzma` (достаточно воспользоваться ключом для `tar`). Написать отдельный тест-кейс на этот случай. Справочно: [тыц1](https://www.reddit.com/r/learnprogramming/comments/t69bxt/bz2_gzip_or_lzma_which_do_you_prefer/), [тыц2](https://www.opennet.ru/opennews/art.shtml?num=20958).
+* **на 9 баллов**: если выставлена переменная окружения `LAB1_MAX_COMPRESSION=1`, то сжатие производится, используя алгоритм `lzma` (достаточно воспользоваться ключом (параметром) для `tar`). Написать отдельный тест-кейс на этот случай. Справочно: [тыц1](https://www.reddit.com/r/learnprogramming/comments/t69bxt/bz2_gzip_or_lzma_which_do_you_prefer/), [тыц2](https://www.opennet.ru/opennews/art.shtml?num=20958).
 * **на 10 баллов**: в дополнение к `.sh` написать все тоже самое, только для ОС Windows (`.bat`)
 
 ---
@@ -689,5 +689,3 @@ Bash scripting cheetsheet - https://devhints.io/bash
 Оценивание работ: точность и глубина ответа, осмысленность повествования, использование материала лекций, отсутствие копирования текста из википедии и прочих chat gpt.
 
 Пример вопроса: "Что такое набор инструкций? Какие вы знаете, чем отличаются?"
-
----
